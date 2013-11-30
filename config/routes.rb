@@ -1,9 +1,9 @@
 Railsgirls::Application.routes.draw do
-  get "/foods/recipie/hotrecipie"
+  devise_for :users
   get "pages/info"
   root :to => redirect('/foods')
   resources :foods
-
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
